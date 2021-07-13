@@ -410,8 +410,8 @@ def func_read_price_list(str_fname_input, my_code, my_column):
                         # １行目は表題行なので、情報コードを取得する。
                         # 取得できる価格情報は、資料「立花証券・ｅ支店・ＡＰＩ、EVENT I/F 利用方法、データ仕様」
                         # p6-8/26 【情報コード一覧】を利用する。
-                        # 取得コードの書式：型+情報コード　　（注意、excel資料から推測。マニュアル資料に記載なし？）
-
+                        # 取得コードの書式：型+情報コード
+                        
                         for i in range(1,len(sprit_out)):
                             my_column.append('')
                             my_column[i] = func_strip_dquot(sprit_out[i])
